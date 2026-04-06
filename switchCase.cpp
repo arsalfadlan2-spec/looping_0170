@@ -1,22 +1,13 @@
 #include <iostream>
-using namespace std;
-
-int main() {
-    return 0;
-}
-#include <iostream>
 #include <string>
 using namespace std;
 
-// Deklarasi variabel global
+// Variabel global
 int kodeJurusan;
 string namaJurusan;
 string statusKuota;
 
-int main() {
-    return 0;
-}
-
+// Input
 void input() {
     cout << "=== PENDAFTARAN JURUSAN KAMPUS ===" << endl;
     cout << "1. Teknologi Informasi" << endl;
@@ -26,6 +17,8 @@ void input() {
     cout << "Masukkan kode jurusan (1-3): ";
     cin >> kodeJurusan;
 }
+
+// Proses
 void pilihanJurusan() {
     switch (kodeJurusan) {
         case 1:
@@ -45,6 +38,8 @@ void pilihanJurusan() {
             statusKuota = "Error: Kode Tidak Valid";
     }
 }
+
+// Output
 void output() {
     cout << "\n==============================" << endl;
     cout << "      HASIL SELEKSI" << endl;
@@ -53,7 +48,7 @@ void output() {
     cout << "Status Kuota    : " << statusKuota << endl;
     cout << "==============================" << endl;
 }
-}
+
 int main() {
     input();
     pilihanJurusan();
